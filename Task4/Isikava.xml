@@ -1,0 +1,151 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9">
+  <diagram id="Ishikawa-Migration" name="Fishbone Analysis">
+    <mxGraphModel dx="1098" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="spine" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=3;endSize=10;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160" y="400" as="sourcePoint" />
+            <mxPoint x="960" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="head" parent="1" style="shape=rect;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=16;" value="Низкая производительность&lt;br&gt;и сбои системы" vertex="1">
+          <mxGeometry height="80" width="200" x="960" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="c1_line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="160" as="sourcePoint" />
+            <mxPoint x="400" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c1_lbl" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1" value="АРХИТЕКТУРА И ПО" vertex="1">
+          <mxGeometry height="30" width="160" x="240" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="i1_1" parent="1" style="text;html=1;align=right;" value="Сетевые задержки (Latency)" vertex="1">
+          <mxGeometry height="30" width="330" x="180" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_1" edge="1" parent="1" source="i1_1" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i1_2" parent="1" style="text;html=1;align=right;" value="Лишние вызовы (Chatty API)" vertex="1">
+          <mxGeometry height="30" width="330" x="200" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_2" edge="1" parent="1" source="i1_2" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i1_3" parent="1" style="text;html=1;align=right;" value="Распределенные транзакции" vertex="1">
+          <mxGeometry height="30" width="330" x="220" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_3" edge="1" parent="1" source="i1_3" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c2_line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="720" y="160" as="sourcePoint" />
+            <mxPoint x="800" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c2_lbl" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1" value="ИНФРАСТРУКТУРА" vertex="1">
+          <mxGeometry height="30" width="160" x="640" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="i2_1" parent="1" style="text;html=1;align=right;" value="Нехватка ресурсов (CPU/RAM)" vertex="1">
+          <mxGeometry height="30" width="340" x="580" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="l2_1" edge="1" parent="1" source="i2_1" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i2_2" parent="1" style="text;html=1;align=right;" value="Отказ Gateway (SPOF)" vertex="1">
+          <mxGeometry height="30" width="330" x="600" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="l2_2" edge="1" parent="1" source="i2_2" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i2_3" parent="1" style="text;html=1;align=right;" value="Проблемы с дисками (IOPS)" vertex="1">
+          <mxGeometry height="30" width="330" x="620" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="l2_3" edge="1" parent="1" source="i2_3" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c3_line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="640" as="sourcePoint" />
+            <mxPoint x="400" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c3_lbl" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1" value="ДАННЫЕ И ИНТЕГРАЦИЯ" vertex="1">
+          <mxGeometry height="30" width="190" x="240" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="i3_1" parent="1" style="text;html=1;align=right;" value="«Грязные» данные из Excel" vertex="1">
+          <mxGeometry height="30" width="330" x="180" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="l3_1" edge="1" parent="1" source="i3_1" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3_2" parent="1" style="text;html=1;align=right;" value="Медленные запросы (N+1)" vertex="1">
+          <mxGeometry height="30" width="330" x="200" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="l3_2" edge="1" parent="1" source="i3_2" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3_3" parent="1" style="text;html=1;align=right;" value="Блокировки в 1С" vertex="1">
+          <mxGeometry height="30" width="330" x="220" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="l3_3" edge="1" parent="1" source="i3_3" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4_line" edge="1" parent="1" style="endArrow=none;html=1;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="720" y="640" as="sourcePoint" />
+            <mxPoint x="800" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4_lbl" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1" value="ПЕРСОНАЛ И ПРОЦЕССЫ" vertex="1">
+          <mxGeometry height="30" width="200" x="640" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="i4_1" parent="1" style="text;html=1;align=right;" value="Ошибки ручного деплоя" vertex="1">
+          <mxGeometry height="30" width="330" x="580" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="l4_1" edge="1" parent="1" source="i4_1" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i4_2" parent="1" style="text;html=1;align=right;" value="Нехватка навыков (DevOps)" vertex="1">
+          <mxGeometry height="30" width="340" x="600" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="l4_2" edge="1" parent="1" source="i4_2" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i4_3" parent="1" style="text;html=1;align=right;" value="Нет мониторинга (SLA)" vertex="1">
+          <mxGeometry height="30" width="330" x="620" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="l4_3" edge="1" parent="1" source="i4_3" style="endArrow=none;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
